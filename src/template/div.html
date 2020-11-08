@@ -1,0 +1,92 @@
+<script>
+    function div_number() {
+        var first_number = parseInt(document.getElementById("Text1").value);
+        var second_number = parseInt(document.getElementById("Text2").value);
+        var result = first_number / second_number;
+        document.getElementById("txtresult").innerHTML = result;
+    }
+</script>
+
+<style>
+    body {
+        background-color: orangered;
+    }
+
+    .out {
+        margin: auto;
+        width: auto;
+        vertical-align: middle;
+        padding: 50px;
+    }
+
+    .input {
+        margin: auto;
+        max-width: 600px;
+        background-color: white;
+        vertical-align: middle;
+        padding: 100px;
+        font-family: cursive;
+        box-shadow: 0px 5px 5px;
+    }
+
+    input {
+        height: 50px;
+        border-radius: none;
+        background-color: orange;
+        color: black;
+        text-align: center;
+        font-size: 20;
+    }
+
+    th {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    table {
+        margin-right: 20px;
+    }
+
+    button {
+        font-family: cursive;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        margin: 3px;
+        margin-top: 30px;
+        cursor: pointer;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
+        color: white;
+        transition: all 0.3s ease 0s;
+        background-color: #EF6C00;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        font-family: cursive;
+        background-color: rgb(231, 230, 230);
+        box-shadow: 0px 5px 10px rgb(231, 230, 230);
+        color: #000000;
+        transform: translateY(-4px);
+    }
+</style>
+
+<div class="out">
+    <div class="input">
+        <table>
+            <th><label>First no. : </label><input type="text" id="Text1">
+            </th>
+            <th>/</th>
+            <th><label>Second no. : </label><input type="text" id="Text2"></th>
+            <th>=</th>
+            <th id="txtresult"></th>
+        </table>
+        <br>
+        <button type="submit" onclick="div_number()">Calculate</button>
+
+        <button type="submit" onclick="location.href='http://localhost:3000/';">Back to Main Screen</button>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<style>
+    body {
+        background-color: orangered;
+    }
+
+    .out {
+        margin: auto;
+        max-width: 600px;
+        margin-top: 10%;
+        vertical-align: middle;
+        padding: 50px;
+    }
+
+    .in {
+        margin: auto;
+        max-width: 300px;
+        background-color: white;
+        vertical-align: middle;
+        text-align: center;
+        padding: 100px;
+        font-family: cursive;
+        box-shadow: 0px 5px 5px;
+    }
+
+    b {
+        font-size: 24px;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        margin: 3px;
+        margin-top: 30px;
+        cursor: pointer;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0);
+        color: white;
+        transition: all 0.3s ease 0s;
+        background-color: #EF6C00;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: rgb(231, 230, 230);
+        box-shadow: 0px 5px 10px rgb(231, 230, 230);
+        color: #000000;
+        transform: translateY(-4px);
+    }
+</style>
+
+<div class="out">
+    <div class="in">
+        <ol>
+            <b>Different Routes</b>
+            <li>
+                <button type="submit" onclick="location.href='http://localhost:3000/add';">Add ( + )</button>
+            </li>
+            <li>
+                <button type="submit" onclick="location.href='http://localhost:3000/minus';">Subtract ( - )</button>
+            </li>
+            <li style="padding: 5px;">
+                <button type="submit" onclick="location.href='http://localhost:3000/multiply';">Multiply ( x )</button>
+            </li>
+            <li style="padding: 5px;">
+                <button type="submit" onclick="location.href='http://localhost:3000/div';">Division ( / )</button>
+            </li>
+        </ol>
+    </div>
+</div>
